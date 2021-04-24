@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+  </head>
+  <style>
+      body {
+        font-size: 36px;
+      }
+  </style>
+  <body>
+      <p>hogehoge
+        <span id="loadSpan" hidden>
+            <svg id="loading" width="1.0em" height="1.0em" xmlns="http://www.w3.org/2000/svg">
+            </svg>
+        </span>
+      foobar<br/>
+      <input type="button" value="toggle animation" onclick="toggleAnimation('loadSpan', 'loading')" /></p>
+  </body>
+  <?!= HtmlService.createHtmlOutputFromFile('script').getContent(); ?>
+</html>
